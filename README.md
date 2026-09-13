@@ -1,9 +1,10 @@
 # Dio's Constellation
 
 A star map of every subject Dio is learning — at school and beyond — that you
-can connect together over time. Each star is a subject (school or
-outside-school); drag stars to arrange them, click one then another to draw a
-connection between them, and add/edit/delete subjects from the side panel.
+can connect together over time. Each star is a subject, colored by its World
+Lab category (Inner World, Com Lab, Logic Lab, System Lab, Growth Lab); drag
+stars to arrange them, click one then another to draw a connection between
+them, and add/edit/delete subjects from the side panel.
 
 It's a plain static site (HTML/CSS/JS, no build step), so it can be hosted for
 free on GitHub Pages.
