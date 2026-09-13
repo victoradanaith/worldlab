@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dio's Constellation</title>
+<meta name="description" content="A star map of every subject Dio is learning, at school and beyond, that you can connect together over time.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="title-group">
+        <h1>Dio's Constellation</h1>
+        <p class="subtitle">Every subject Dio's learning — at school and beyond — mapped as stars you can connect over time.</p>
+      </div>
+      <div>
+        <div class="stats" id="stats"></div>
+        <div class="sync-badge local" id="syncBadge"><span class="sync-dot"></span>Saved on this device only</div>
+      </div>
+      <button class="btn-add" id="addBtn" type="button">+ Add subject</button>
+    </header>
+
+    <main class="stage">
+      <div class="canvas-col">
+        <div class="canvas" id="canvas">
+          <svg class="lines" id="lines"></svg>
+        </div>
+        <p class="hint">Drag a star to rearrange it. Click one, then another, to connect them.</p>
+      </div>
+      <aside class="panel" id="panel" hidden></aside>
+    </main>
+
+    <p class="footnote">Data syncs across devices once a Firebase project is connected in <code>firebase-config.js</code> — see README.md. Until then, it's saved in this browser only.</p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
